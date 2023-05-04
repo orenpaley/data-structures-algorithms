@@ -40,7 +40,7 @@ class Stack {
   pop() {
     if (!this.first) throw new Error("Can't pop from an empty stack.");
 
-    let temp = this.first;
+    let tmp = this.first;
 
     // if (this.first === this.last) {
     //   this.last = null;
@@ -48,7 +48,7 @@ class Stack {
 
     this.first = this.first.next;
     this.size--;
-    return temp.val;
+    return tmp.val;
   }
 
   /** peek(): return the value of the first node in the stack. */
